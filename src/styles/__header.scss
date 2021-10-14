@@ -50,11 +50,11 @@ app-header {
     header {
       .nav__btn {
         display: block;
-        border: none;
+        border: rgb(146, 142, 142) solid 1px;
         font-size: 2.1rem;
         background: none;
         cursor: pointer;
-        padding: 0 px;
+        padding: 0.1rem 0.5rem;
       }
       .nav {
         position: relative;

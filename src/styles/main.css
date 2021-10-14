@@ -82,11 +82,11 @@ app-header header .nav__btn {
 @media only screen and (max-width: 868px) {
   app-header header .nav__btn {
     display: block;
-    border: none;
+    border: #928e8e solid 1px;
     font-size: 2.1rem;
     background: none;
     cursor: pointer;
-    padding: 0 px;
+    padding: 0.1rem 0.5rem;
   }
   app-header header .nav {
     position: relative;
