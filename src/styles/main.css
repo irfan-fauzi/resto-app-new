@@ -303,7 +303,7 @@ app-header header .nav__btn {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .article__item img {
@@ -387,6 +387,10 @@ app-header header .nav__btn {
     margin: 15px 10px;
     line-height: 1.4;
   }
+}
+
+app-footer {
+  display: block;
 }
 
 footer {

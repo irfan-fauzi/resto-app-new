@@ -1,8 +1,9 @@
 import 'regenerator-runtime' /* for async await transpile */
 import '../styles/main.css'
-import './components/header.js'
-import './components/hero.js'
+import './components/header'
+import './components/hero'
 import './components/resto-list'
+import './components/footer'
 import fakeData from '../DATA.json'
 
 class RestoApp {
