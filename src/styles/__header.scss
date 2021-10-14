@@ -1,0 +1,88 @@
+app-header {
+  display: block;
+  header {
+    background: rgb(255, 254, 254);
+    width: 100%;
+    .nav {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1.5rem;
+      height: 80px;
+      justify-content: space-between;
+      align-items: center;
+      .nav__title {
+        color: rgb(44, 44, 43);
+        font-family: "Caveat", cursive;
+        font-size: 2.2rem;
+      }
+      .nav__list {
+        display: flex;
+        gap: 1rem;
+        // border: red solid 1px;
+        position: relative;
+
+        .nav__item {
+          a {
+            color: rgb(24, 23, 23);
+            font-family: "Montserrat", sans-serif;
+            cursor: pointer;
+            text-transform: lowercase;
+            letter-spacing: 2px;
+            transition: 0.2s ease-in-out;
+            display: inline-block;
+            padding: 13px;
+            font-size: 1.1rem;
+            width: 100%;
+          }
+          :hover {
+            color: rgb(255, 132, 0);
+          }
+        }
+      }
+    }
+    .nav__btn {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 868px) {
+    header {
+      .nav__btn {
+        display: block;
+        border: none;
+        font-size: 2.1rem;
+        background: none;
+        cursor: pointer;
+        padding: 0 px;
+      }
+      .nav {
+        position: relative;
+
+        .nav__list {
+          flex-direction: column;
+          position: absolute;
+          width: 98%;
+          z-index: 90;
+
+          background: rgb(252, 251, 251);
+          transform: translate(-1000px, 150px);
+          transition: 0.2s ease-in-out;
+          padding: 2rem;
+
+          .nav__item {
+            a {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .nav__title {
+          font-size: 2.1rem;
+        }
+        .show {
+          transform: translate(-30px, 170px);
+        }
+      }
+    }
+  }
+}

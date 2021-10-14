@@ -1,0 +1,138 @@
+.hero {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //border: rgb(118, 118, 30) solid 1px;
+  position: relative;
+  z-index: 6;
+  background: url("https://raw.githubusercontent.com/irfan-fauzi/resto-app/main/src/public/images/heros/hero-image_4.jpg");
+  ::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 225, 225);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  .hero__inner {
+    //border: red solid 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    .text-wrap {
+      h1 {
+        color: rgb(255, 132, 0);
+        font-size: 3.8rem;
+        font-weight: 800;
+        line-height: 0.9;
+      }
+      span {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        padding-right: 3rem;
+      }
+      .hero__btn {
+        background: rgb(27, 27, 27);
+        color: #fff;
+        border: none;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:hover {
+          background: rgb(255, 132, 0);
+          transform: scale(1.1);
+          color: black;
+        }
+      }
+    }
+    .img-wrap {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 868px) {
+  .hero {
+    height: 370px;
+    .hero__inner {
+      .text-wrap {
+        h1 {
+          font-size: 2.3rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+          margin: 0.5rem 0;
+        }
+        h4 {
+          margin: 0.8rem 0;
+          font-size: 0.8rem;
+        }
+        .hero__btn {
+          text-transform: lowercase;
+          font-size: 0.8rem;
+          padding: 0.9rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 100%;
+    padding: 2rem 0;
+    .hero__inner {
+      grid-template-columns: 1fr;
+      .text-wrap {
+        padding: 2rem 0;
+        h1 {
+          font-size: 4.8rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin: 0.5rem 0;
+        }
+        h4 {
+          margin: 1.5rem 0;
+          font-size: 1rem;
+          padding: 0;
+        }
+        .hero__btn {
+          letter-spacing: 1;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          padding: 0.9rem 1.5rem;
+        }
+      }
+    }
+  }
+}
