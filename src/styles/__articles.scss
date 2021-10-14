@@ -46,6 +46,7 @@
 }
 @media only screen and (max-width: 868px) {
   .article {
+    margin-top: 10rem;
     resto-list {
       .title {
         font-size: 0.9rem;
@@ -65,7 +66,7 @@
 @media only screen and (max-width: 600px) {
   .article {
     width: 100%;
-    margin: 0;
+    margin-top: 10rem;
     padding: 0 10px;
     resto-list {
       .title {

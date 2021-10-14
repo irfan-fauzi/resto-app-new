@@ -76,7 +76,12 @@
   }
 }
 @media only screen and (max-width: 868px) {
+  hero-app {
+    position: relative;
+    top: 5rem;
+  }
   .hero {
+    //border: red solid 1px;
     height: 370px;
     .hero__inner {
       .text-wrap {

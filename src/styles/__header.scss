@@ -48,6 +48,8 @@ app-header {
 
   @media only screen and (max-width: 868px) {
     header {
+      position: fixed;
+      z-index: 20;
       .nav__btn {
         display: block;
         border: rgb(146, 142, 142) solid 1px;

@@ -80,6 +80,10 @@ app-header header .nav__btn {
 }
 
 @media only screen and (max-width: 868px) {
+  app-header header {
+    position: fixed;
+    z-index: 20;
+  }
   app-header header .nav__btn {
     display: block;
     border: #928e8e solid 1px;
@@ -215,6 +219,10 @@ app-header header .nav__btn {
 }
 
 @media only screen and (max-width: 868px) {
+  hero-app {
+    position: relative;
+    top: 5rem;
+  }
   .hero {
     height: 370px;
   }
@@ -337,6 +345,9 @@ app-header header .nav__btn {
 }
 
 @media only screen and (max-width: 868px) {
+  .article {
+    margin-top: 10rem;
+  }
   .article resto-list .title {
     font-size: 0.9rem;
     font-weight: 600;
@@ -354,7 +365,7 @@ app-header header .nav__btn {
 @media only screen and (max-width: 600px) {
   .article {
     width: 100%;
-    margin: 0;
+    margin-top: 10rem;
     padding: 0 10px;
   }
   .article resto-list .title {
