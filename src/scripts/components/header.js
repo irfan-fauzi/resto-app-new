@@ -16,10 +16,12 @@ class Header extends HTMLElement{
       </nav>
     </header>
     `
+    const shadow = document.querySelector('.shadow')
     const navBtn = this.querySelector('.nav__btn')
     const navList = this.querySelector('.nav__list')
     navBtn.addEventListener('click', function(){
       navList.classList.toggle('show')
+      shadow.classList.toggle('shadow-show')
     })
   }
 }
