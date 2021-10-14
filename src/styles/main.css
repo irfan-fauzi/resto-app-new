@@ -351,6 +351,26 @@ app-header header .nav__btn {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .article {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .article resto-list .title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  .article resto-list .city {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .article resto-list .desc {
+    font-size: 0.8rem;
+  }
+}
+
 footer {
   background: #353333;
   height: 80px;

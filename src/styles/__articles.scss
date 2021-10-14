@@ -63,4 +63,23 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .article {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    resto-list {
+      .title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 15px 0;
+      }
+      .city {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .desc {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
