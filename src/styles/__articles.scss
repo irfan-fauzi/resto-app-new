@@ -63,11 +63,11 @@
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
   .article {
     width: 100%;
     margin-top: 10rem;
-    padding: 0 10px;
+    padding: 0;
     resto-list {
       .title {
         font-size: 0.9rem;
