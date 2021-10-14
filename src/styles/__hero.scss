@@ -8,6 +8,7 @@
   position: relative;
   z-index: 6;
   background: url("https://raw.githubusercontent.com/irfan-fauzi/resto-app/main/src/public/images/heros/hero-image_4.jpg");
+ 
   ::after {
     content: "";
     width: 100%;
@@ -112,12 +113,14 @@
   .hero {
     height: 100%;
     padding: 2rem 0;
+    width: 100%;
+    //  border: red solid 1px;
     .hero__inner {
       grid-template-columns: 1fr;
       .text-wrap {
         padding: 2rem 0;
         h1 {
-          font-size: 4.8rem;
+          font-size: 3.4rem;
         }
         h2 {
           font-size: 2rem;

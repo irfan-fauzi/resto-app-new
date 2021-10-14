@@ -81,6 +81,7 @@ app-header header .nav__btn {
 
 @media only screen and (max-width: 868px) {
   app-header header {
+    top: 0;
     position: fixed;
     z-index: 20;
   }
@@ -251,6 +252,7 @@ app-header header .nav__btn {
   .hero {
     height: 100%;
     padding: 2rem 0;
+    width: 100%;
   }
   .hero .hero__inner {
     -ms-grid-columns: 1fr;
@@ -260,7 +262,7 @@ app-header header .nav__btn {
     padding: 2rem 0;
   }
   .hero .hero__inner .text-wrap h1 {
-    font-size: 4.8rem;
+    font-size: 3.4rem;
   }
   .hero .hero__inner .text-wrap h2 {
     font-size: 2rem;
@@ -362,23 +364,28 @@ app-header header .nav__btn {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .article {
     width: 100%;
-    margin-top: 10rem;
+    margin: 10rem 0;
     padding: 0;
   }
+  .article resto-list img {
+    padding: 5px;
+  }
   .article resto-list .title {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin: 15px 0;
+    margin: 15px 10px;
   }
   .article resto-list .city {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   .article resto-list .desc {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: 15px 10px;
+    line-height: 1.4;
   }
 }
 

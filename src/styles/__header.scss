@@ -48,6 +48,7 @@ app-header {
 
   @media only screen and (max-width: 868px) {
     header {
+      top: 0;
       position: fixed;
       z-index: 20;
       .nav__btn {
