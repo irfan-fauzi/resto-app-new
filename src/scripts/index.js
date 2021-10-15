@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 import 'regenerator-runtime' /* for async await transpile */
 import '../styles/main.css'
 import './components/header'
@@ -7,13 +8,14 @@ import './components/footer'
 import fakeData from '../DATA.json'
 
 class RestoApp {
-  constructor(){
+  constructor() {
     this.restoList = document.querySelector('resto-list')
     this.fakeData = fakeData.restaurants
   }
-  renderRestoList(){
+
+  renderRestoList() {
     this.restoList.dataResto = this.fakeData
-  } 
+  }
 }
 
 const restoApp = new RestoApp()

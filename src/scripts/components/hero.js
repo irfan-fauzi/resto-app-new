@@ -1,9 +1,10 @@
-class Hero extends HTMLElement{
-  connectedCallback(){
-    this.render()
+/* eslint-disable linebreak-style */
+class Hero extends HTMLElement {
+  connectedCallback() {
+    this.render();
   }
 
-  render(){
+  render() {
     this.innerHTML = `
         <section class="hero" id="hero">
         <div class="hero__inner">
@@ -19,8 +20,8 @@ class Hero extends HTMLElement{
           </div>
         </div>
       </section>
-    `
+    `;
   }
 }
 
-customElements.define('hero-app', Hero)
+customElements.define('hero-app', Hero);

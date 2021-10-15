@@ -1,11 +1,16 @@
-class RestoItem extends HTMLElement{
-  set dataResto(data){
-    this._dataResto = data
-    this.render()
+/* eslint-disable linebreak-style */
+class RestoItem extends HTMLElement {
+  set dataResto(data) {
+    // eslint-disable-next-line no-underscore-dangle
+    this._dataResto = data;
+    this.render();
   }
 
-  render(){
-    const {name, description, pictureId, city, rating} = this._dataResto
+  render() {
+    const {
+      name, description, pictureId, city, rating,
+    // eslint-disable-next-line no-underscore-dangle
+    } = this._dataResto;
     this.innerHTML = `
       <article class="article__item" tabindex="0">
         <img src=${pictureId} alt="meja makan dalam ruangan dengan tirai yang besar">
@@ -18,8 +23,8 @@ class RestoItem extends HTMLElement{
           <p class="desc">${description}</p>
         </div>
       </article>
-    `
+    `;
   }
 }
 
-customElements.define('resto-item', RestoItem)
+customElements.define('resto-item', RestoItem);

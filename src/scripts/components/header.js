@@ -1,8 +1,10 @@
-class Header extends HTMLElement{
-  connectedCallback(){
-    this.render()
+/* eslint-disable linebreak-style */
+class Header extends HTMLElement {
+  connectedCallback() {
+    this.render();
   }
-  render(){
+
+  render() {
     this.innerHTML = `
     <header>
       <nav id="drawer" class="nav">
@@ -15,14 +17,14 @@ class Header extends HTMLElement{
         </ul>
       </nav>
     </header>
-    `
-    const shadow = document.querySelector('.shadow')
-    const navBtn = this.querySelector('.nav__btn')
-    const navList = this.querySelector('.nav__list')
-    navBtn.addEventListener('click', function(){
-      navList.classList.toggle('show')
-      shadow.classList.toggle('shadow-show')
-    })
+    `;
+    const shadow = document.querySelector('.shadow');
+    const navBtn = this.querySelector('.nav__btn');
+    const navList = this.querySelector('.nav__list');
+    navBtn.addEventListener('click', () => {
+      navList.classList.toggle('show');
+      shadow.classList.toggle('shadow-show');
+    });
   }
 }
-customElements.define('app-header', Header)
+customElements.define('app-header', Header);

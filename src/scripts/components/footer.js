@@ -1,8 +1,10 @@
-class Footer extends HTMLElement{
-  connectedCallback(){
-    this.render()
+/* eslint-disable linebreak-style */
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.render();
   }
-  render(){
+
+  render() {
     this.innerHTML = `
     <footer>
       <div class="container">
@@ -10,8 +12,8 @@ class Footer extends HTMLElement{
         <p>Copyright © 2021 irfan-fauzi</p>
       </div>
     </footer>
-    `
+    `;
   }
 }
 
-customElements.define('app-footer', Footer)
+customElements.define('app-footer', Footer);
