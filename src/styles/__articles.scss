@@ -28,6 +28,13 @@
     .city {
       font-size: 0.9rem;
     }
+    .desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
   }
   .flex {
     display: flex;
@@ -76,7 +83,6 @@
         font-size: 1.1rem;
         font-weight: 600;
         margin: 15px 10px;
-        
       }
       .city {
         font-size: 1rem;

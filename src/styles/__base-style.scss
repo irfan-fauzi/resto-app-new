@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@100;200;300;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@100;200;300;600;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
 }
 
 img {
@@ -14,4 +18,8 @@ ul {
 }
 a {
   text-decoration: none;
+}
+#mainContent {
+  // border: red solid 1px;
+  min-height: 100%;
 }

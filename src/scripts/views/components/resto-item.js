@@ -8,7 +8,7 @@ class RestoItem extends HTMLElement {
 
   render() {
     const {
-      name, description, pictureId, city, rating,
+      name, description, pictureId, city, rating, id,
     } = this._dataResto
     this.innerHTML = `
       <article class="article__item" tabindex="0">
@@ -16,8 +16,8 @@ class RestoItem extends HTMLElement {
         <div class="content">
           <h2 class="title">${name}</h2>
           <div class="flex">
-            <h3 class="city">${city}</h3>
-            <h4 class="rating">${rating}</h4>
+            <h3 class="city"><a href="#/detail/${id}">${city}</a></h3>
+            <h4 class="rating">⭐️${rating}</h4>
           </div>
           <p class="desc">${description}</p>
         </div>

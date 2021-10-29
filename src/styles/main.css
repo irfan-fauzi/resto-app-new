@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 img {
   width: 100%;
 }
@@ -16,6 +21,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+#mainContent {
+  min-height: 100%;
 }
 
 app-header {
@@ -322,6 +331,15 @@ app-header header .nav__btn {
 
 .article__item .city {
   font-size: 0.9rem;
+}
+
+.article__item .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .article .flex {
