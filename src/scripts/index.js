@@ -5,18 +5,16 @@ import './views/components/header'
 import './views/components/hero'
 import './views/components/resto-list'
 import './views/components/footer'
-import fakeData from '../DATA.json'
+import App from './views/app'
 
-class RestoApp {
-  constructor() {
-    this.restoList = document.querySelector('resto-list')
-    this.fakeData = fakeData.restaurants
-  }
+const app = new App({
+  content: document.querySelector('#mainContent'),
+})
 
-  renderRestoList() {
-    this.restoList.dataResto = this.fakeData
-  }
-}
+window.addEventListener('hashchange', () => {
+  app.renderPage()
+})
 
-const restoApp = new RestoApp()
-restoApp.renderRestoList()
+window.addEventListener('load', () => {
+  app.renderPage()
+})
