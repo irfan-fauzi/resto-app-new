@@ -27,6 +27,13 @@ a {
   min-height: 100%;
 }
 
+@media only screen and (max-width: 868px) {
+  #mainContent .detail-page {
+    border: red solid 1px;
+    margin-top: 80px;
+  }
+}
+
 app-header {
   display: block;
 }
@@ -405,6 +412,32 @@ app-header header .nav__btn {
     margin: 15px 10px;
     line-height: 1.4;
   }
+}
+
+.detail {
+  font-family: "Montserrat", sans-serif;
+}
+
+.detail .title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.detail .title-wrap h3 {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.detail .categorie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 app-footer {

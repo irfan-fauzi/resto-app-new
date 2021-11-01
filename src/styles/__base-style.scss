@@ -20,6 +20,12 @@ a {
   text-decoration: none;
 }
 #mainContent {
-  // border: red solid 1px;
+  //border: red solid 1px;
   min-height: 100%;
+  @media only screen and (max-width: 868px) {
+    .detail-page {
+      border: red solid 1px;
+      margin-top: 80px;
+    }
+  }
 }

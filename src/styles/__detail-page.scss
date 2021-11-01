@@ -1,0 +1,16 @@
+.detail{
+  font-family: "Montserrat", sans-serif;
+  .title-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    h3{
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+  }
+  .categorie{
+    display: flex;
+    gap: 1rem;
+  }
+}
