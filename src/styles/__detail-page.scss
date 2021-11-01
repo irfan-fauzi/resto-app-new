@@ -1,16 +1,40 @@
-.detail{
+.detail {
   font-family: "Montserrat", sans-serif;
-  .title-wrap{
+  padding: 0 0.7rem;
+  color: rgb(73, 68, 68);
+  .icon-location, .icon-star {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  .title-wrap {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0;
-    h3{
-      margin: 0.3rem 0;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      margin-top: 0.5rem;
       font-size: 1rem;
     }
   }
-  .categorie{
+  .peringkat{
+    margin-top: 0.5rem;
+  }
+  .categorie {
+    // border: red solid 1px;
     display: flex;
+    margin-top: 0.7rem;
     gap: 1rem;
+    p {
+      background: rgba(255, 208, 0, 0.315);
+      font-size: 0.8rem;
+      padding: 5px 6px;
+      border-radius: 4px;
+    }
   }
 }

@@ -29,7 +29,6 @@ a {
 
 @media only screen and (max-width: 868px) {
   #mainContent .detail-page {
-    border: red solid 1px;
     margin-top: 80px;
   }
 }
@@ -416,6 +415,15 @@ app-header header .nav__btn {
 
 .detail {
   font-family: "Montserrat", sans-serif;
+  padding: 0 0.7rem;
+  color: #494444;
+}
+
+.detail .icon-location, .detail .icon-star {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .detail .title-wrap {
@@ -425,19 +433,39 @@ app-header header .nav__btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
 }
 
-.detail .title-wrap h3 {
-  margin: 0.3rem 0;
+.detail .title-wrap h2 {
+  font-size: 1.2rem;
+}
+
+.detail .title-wrap p {
+  margin-top: 0.5rem;
   font-size: 1rem;
+}
+
+.detail .peringkat {
+  margin-top: 0.5rem;
 }
 
 .detail .categorie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0.7rem;
   gap: 1rem;
+}
+
+.detail .categorie p {
+  background: rgba(255, 208, 0, 0.315);
+  font-size: 0.8rem;
+  padding: 5px 6px;
+  border-radius: 4px;
 }
 
 app-footer {
