@@ -5,6 +5,7 @@ import './views/components/header'
 import './views/components/hero'
 import './views/components/resto-list'
 import './views/components/footer'
+import './views/components/detail-resto'
 import App from './views/app'
 
 const app = new App({
