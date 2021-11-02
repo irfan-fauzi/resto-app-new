@@ -3,6 +3,9 @@ app-header {
   header {
     background: rgb(255, 254, 254);
     width: 100%;
+    .logo {
+      width: 180px;
+    }
     .nav {
       display: flex;
       max-width: 1200px;
