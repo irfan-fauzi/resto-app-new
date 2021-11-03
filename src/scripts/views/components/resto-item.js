@@ -14,10 +14,10 @@ class RestoItem extends HTMLElement {
       <article class="article__item" tabindex="0">
         <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar">
         <div class="content">
-          <h2 class="title">${name}</h2>
+          <h2 class="title"><a href="#/detail/${id}">${name}</a></h2>
           <div class="flex">
-            <h3 class="city"><a href="#/detail/${id}">${city}</a></h3>
-            <h4 class="rating">⭐️${rating}</h4>
+            <h3 class="city">${city}</h3>
+            <h4 class="rating">⭐️ ${rating}</h4>
           </div>
           <p class="desc">${description}</p>
         </div>
