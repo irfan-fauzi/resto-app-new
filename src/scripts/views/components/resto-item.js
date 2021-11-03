@@ -12,6 +12,7 @@ class RestoItem extends HTMLElement {
     } = this._dataResto
     this.innerHTML = `
       <article class="article__item" tabindex="0">
+        
         <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar">
         <div class="content">
           <h2 class="title"><a href="#/detail/${id}">${name}</a></h2>

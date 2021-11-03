@@ -12,18 +12,36 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
   }
   &__item {
+    // outline: solid black 1px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3.4px 3.4px 11px -61px rgba(0, 0, 0, 0.012),
+      8.7px 8.7px 27.8px -61px rgba(0, 0, 0, 0.018),
+      17.7px 17.7px 56.7px -61px rgba(0, 0, 0, 0.022),
+      36.5px 36.5px 116.8px -61px rgba(0, 0, 0, 0.028),
+      100px 100px 320px -61px rgba(0, 0, 0, 0.04);
     img {
       height: 250px;
       object-fit: cover;
       object-position: center;
       width: 100%;
+      border-radius: 10px;
     }
     .title {
       font-size: 1rem;
       margin: 15px 0;
+      a {
+        color: rgb(56, 55, 55);
+        &:hover {
+          color: rgba(109, 13, 13, 0.945);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
     }
     .city {
       font-size: 0.9rem;

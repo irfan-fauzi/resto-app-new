@@ -322,7 +322,16 @@ app-header header .nav__btn {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.article__item {
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-box-shadow: 3.4px 3.4px 11px -61px rgba(0, 0, 0, 0.012), 8.7px 8.7px 27.8px -61px rgba(0, 0, 0, 0.018), 17.7px 17.7px 56.7px -61px rgba(0, 0, 0, 0.022), 36.5px 36.5px 116.8px -61px rgba(0, 0, 0, 0.028), 100px 100px 320px -61px rgba(0, 0, 0, 0.04);
+          box-shadow: 3.4px 3.4px 11px -61px rgba(0, 0, 0, 0.012), 8.7px 8.7px 27.8px -61px rgba(0, 0, 0, 0.018), 17.7px 17.7px 56.7px -61px rgba(0, 0, 0, 0.022), 36.5px 36.5px 116.8px -61px rgba(0, 0, 0, 0.028), 100px 100px 320px -61px rgba(0, 0, 0, 0.04);
 }
 
 .article__item img {
@@ -332,11 +341,22 @@ app-header header .nav__btn {
   -o-object-position: center;
      object-position: center;
   width: 100%;
+  border-radius: 10px;
 }
 
 .article__item .title {
   font-size: 1rem;
   margin: 15px 0;
+}
+
+.article__item .title a {
+  color: #383737;
+}
+
+.article__item .title a:hover {
+  color: rgba(109, 13, 13, 0.945);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .article__item .city {
