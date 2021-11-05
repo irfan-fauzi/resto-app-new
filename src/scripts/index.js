@@ -1,5 +1,4 @@
-/* eslint-disable semi */
-import 'regenerator-runtime' /* for async await transpile */
+import 'regenerator-runtime'
 import '../styles/main.css'
 import './views/components/header'
 import './views/components/hero'

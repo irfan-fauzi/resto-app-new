@@ -6,8 +6,8 @@ const RestoDetail = {
   async render() {
     return `
     <div class="detail-page">
-      
     </div>
+   
     `
   },
 

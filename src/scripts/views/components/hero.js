@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 class Hero extends HTMLElement {
   connectedCallback() {
-    this.render();
+    this.render()
   }
 
   render() {
@@ -20,8 +20,8 @@ class Hero extends HTMLElement {
           </div>
         </div>
       </section>
-    `;
+    `
   }
 }
 
-customElements.define('hero-app', Hero);
+customElements.define('hero-app', Hero)

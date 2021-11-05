@@ -3,6 +3,8 @@ import './atom/food'
 import './atom/drink'
 import './atom/ulasan'
 
+import LikeButtonInitiator from '../../utils/like-resto-init'
+
 class DetailResto extends HTMLElement {
   set detailResto(resto) {
     this._detailResto = resto
@@ -11,6 +13,7 @@ class DetailResto extends HTMLElement {
 
   render() {
     const {
+      id,
       pictureId,
       name,
       description,
@@ -27,10 +30,12 @@ class DetailResto extends HTMLElement {
       </div>
       <div class="title-wrap">
         <h2>${name}</h2>  
-        <p><img class="icon-location" src="/icons/location.png" alt="">${address} - ${city}</p>  
+        <p><img class="icon-location" src="icons/location.png" alt="">Alamat: ${address} - ${city}</p>  
       </div>
       <div>
-        <p class="peringkat"><img src="/icons/star.png" class="icon-star" alt="">${rating}</p>
+        <p class="peringkat"><img src="icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
+        <div class="btn-wrap"></div>
+        
       </div>
       <div class="categorie">
         
@@ -63,6 +68,7 @@ class DetailResto extends HTMLElement {
         <h3>Review</h3>
         <div class="rating-wrap">
           <p class="rating">Rating ${rating}</p>
+         
           <p class="ulasan">${customerReviews.length} Ulasan</p>
         </div>
         <div id="ulasan-wrap">
@@ -94,6 +100,24 @@ class DetailResto extends HTMLElement {
       UlasanComponent.dataUlasan = data
       ulasanWrap.appendChild(UlasanComponent)
     })
+    const btnWrap = this.querySelector('.btn-wrap')
+    LikeButtonInitiator.init({
+      likeButtonContainer: btnWrap,
+      detailResto: {
+        id,
+        pictureId,
+        name,
+        description,
+        city,
+        address,
+        rating,
+        menus,
+        customerReviews,
+      },
+    })
+    // const btnApp = document.createElement('app-btn')
+    // btnApp.title = 'simpan ke favorite'
+    // btnWrap.appendChild(btnApp)
   }
 }
 
