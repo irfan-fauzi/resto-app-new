@@ -20,9 +20,6 @@ const Favorite = {
     articleContainer.appendChild(restoList)
     restoList.dataResto = resto
     restoList.setDetailPage = 'favorite-detail'
-    restoList.eventDelete = function () {
-      console.log('ok')
-    }
   },
 
 }
