@@ -6,6 +6,11 @@ class RestoItem extends HTMLElement {
     this.render()
   }
 
+  set setDetailPage(data) {
+    this._detailPage = data
+    this.render()
+  }
+
   render() {
     const {
       name, description, pictureId, city, rating, id,
@@ -15,7 +20,7 @@ class RestoItem extends HTMLElement {
         
         <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar">
         <div class="content">
-          <h2 class="title"><a href="#/detail/${id}">${name}</a></h2>
+          <h2 class="title"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
           <div class="flex">
             <h3 class="city">${city}</h3>
             <h4 class="rating">⭐️ ${rating}</h4>

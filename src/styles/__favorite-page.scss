@@ -1,0 +1,19 @@
+.favorite-page {
+  font-family: "Montserrat", sans-serif;
+  .title-page{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(71, 71, 71);
+  }
+  .article {
+    // border: red solid 1px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 868px) {
+    .title-page {
+      margin: 110px 0 20px 0;
+      
+    }
+  }
+}

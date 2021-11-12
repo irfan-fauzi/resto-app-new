@@ -1,9 +1,11 @@
 import RestoDBSource from '../../data/resto-db-source'
+import '../components/molekul/resto-list'
 
 const Home = {
   async render() {
     return `
     <hero-app></hero-app>
+    
     <section class="article" id="article">
       <h2 class="article__heading">Pelayanan kami</h2>
     </section>
@@ -16,6 +18,7 @@ const Home = {
     const restoList = document.createElement('resto-list')
     articleContainer.appendChild(restoList)
     restoList.dataResto = restourants
+    restoList.setDetailPage = 'detail'
   },
 }
 

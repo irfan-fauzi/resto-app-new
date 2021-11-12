@@ -1,4 +1,4 @@
-import './resto-item'
+import '../resto-item'
 
 class RestoList extends HTMLElement {
   set dataResto(data) {
@@ -6,11 +6,9 @@ class RestoList extends HTMLElement {
     this.render()
   }
 
-  set renderError(messege) {
-    this._messege = messege
-    this.innerHTML = `
-    <h2 class="renderEror">${this._message}</h2>
-    `
+  set setDetailPage(data) {
+    this._detailPage = data
+    this.render()
   }
 
   render() {
@@ -19,6 +17,7 @@ class RestoList extends HTMLElement {
       const restoItem = document.createElement('resto-item')
       this.appendChild(restoItem)
       restoItem.dataResto = item
+      restoItem.setDetailPage = this._detailPage
     })
   }
 }

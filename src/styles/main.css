@@ -316,7 +316,7 @@ app-header header .nav__btn {
   margin-bottom: 5rem;
 }
 
-.article resto-list {
+.article resto-list, .article resto-listfav {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -597,6 +597,27 @@ app-header header .nav__btn {
 
 .review #ulasan-wrap .ulasan p {
   margin: 7px;
+}
+
+.favorite-page {
+  font-family: "Montserrat", sans-serif;
+}
+
+.favorite-page .title-page {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #474747;
+}
+
+.favorite-page .article {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 868px) {
+  .favorite-page .title-page {
+    margin: 110px 0 20px 0;
+  }
 }
 
 app-footer {

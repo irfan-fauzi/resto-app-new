@@ -1,41 +1,36 @@
-import CONFIG from '../../globals/config'
-import './atom/food'
-import './atom/drink'
-import './atom/ulasan'
+import CONFIG from '../../../globals/config'
+import '../atom/food'
+import '../atom/drink'
+import '../atom/ulasan'
 
-class DetailResto extends HTMLElement {
-  set detailResto(resto) {
-    this._detailResto = resto
+class DetailRestoFav extends HTMLElement {
+  set detailResto(dataDetailresto) {
+    this._detailResto = dataDetailresto
     this.render()
   }
 
   render() {
     const {
-      pictureId,
-      name,
-      description,
-      city,
-      address,
-      rating,
-      menus,
-      customerReviews,
+      pictureId, name, description, city, address, rating, menus, customerReviews,
     } = this._detailResto
     this.innerHTML = `
     <article class="detail">
       <div class="img-wrap">
         <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="" class="main-img">
       </div>
+
       <div class="title-wrap">
         <h2>${name}</h2>  
         <p><img class="icon-location" src="icons/location.png" alt="">Alamat: ${address} - ${city}</p>  
       </div>
+
       <div>
         <p class="peringkat"><img src="icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
         <div class="btn-wrap"></div>
-        
       </div>
+
       <div class="categorie">
-        
+    
       </div>
 
       <section class="tentang-restoran">
@@ -65,15 +60,12 @@ class DetailResto extends HTMLElement {
         <h3>Review</h3>
         <div class="rating-wrap">
           <p class="rating">Rating ${rating}</p>
-         
           <p class="ulasan">${customerReviews.length} Ulasan</p>
         </div>
         <div id="ulasan-wrap">
-          
-          
+  
         </div>
       </section>
-      
     </article>
     `
     const foodWrap = this.querySelector('#foods')
@@ -100,4 +92,4 @@ class DetailResto extends HTMLElement {
   }
 }
 
-customElements.define('detail-resto', DetailResto)
+customElements.define('detail-restofav', DetailRestoFav)

@@ -13,10 +13,9 @@ const LikeButtonInitiator = {
     const btnLike = document.createElement('app-btn')
     btnLike.title = 'simpan ke favorite'
     this._likeButtonContainer.appendChild(btnLike)
-    btnLike.event = async () => {
+    btnLike.event = async (e) => {
       await FavoriteRestoranIdb.putResto(this._detailResto)
-      const db = await FavoriteRestoranIdb.getAllResto()
-      console.log(db)
+      e.target.innerHTML = 'tersimpan'
     }
   },
 

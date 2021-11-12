@@ -1,9 +1,30 @@
+import FavoriteRestoranIdb from '../../data/favorite-resto-idb'
+import '../components/molekul/resto-list'
+
 const Favorite = {
   async render() {
     return `
-    <h1>Favorite page</h1>
+    <div class="favorite-page">
+      <h1 class="title-page">Favorite page</h1>
+      <section class="article" id="article">
+
+      </section>
+    </div>
     `
   },
+
+  async afterRender() {
+    const resto = await FavoriteRestoranIdb.getAllResto()
+    const articleContainer = document.querySelector('#article')
+    const restoList = document.createElement('resto-list')
+    articleContainer.appendChild(restoList)
+    restoList.dataResto = resto
+    restoList.setDetailPage = 'favorite-detail'
+    restoList.eventDelete = function () {
+      console.log('ok')
+    }
+  },
+
 }
 
 export default Favorite
