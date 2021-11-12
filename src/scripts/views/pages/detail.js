@@ -1,6 +1,6 @@
+import FavoriteRestoranIdb from '../../data/favorite-resto-idb'
 import RestoDBSource from '../../data/resto-db-source'
 import UrlParser from '../../routes/url-parser'
-import LikeButtonInitiator from '../../utils/like-resto-init'
 import '../components/detail-resto'
 
 const RestoDetail = {
@@ -16,24 +16,14 @@ const RestoDetail = {
     const restoDetail = await RestoDBSource.detailResto(url.id)
     const detailPageContainer = document.querySelector('.detail-page')
     const detailRestoElement = document.createElement('detail-resto')
-    detailRestoElement.detailResto = restoDetail.restaurant
     detailPageContainer.appendChild(detailRestoElement)
-
-    const btnWrap = detailRestoElement.querySelector('.btn-wrap')
-    LikeButtonInitiator.init({
-      likeButtonContainer: btnWrap,
-      detailResto: {
-        id: restoDetail.restaurant.id,
-        pictureId: restoDetail.restaurant.pictureId,
-        name: restoDetail.restaurant.name,
-        description: restoDetail.restaurant.description,
-        city: restoDetail.restaurant.city,
-        address: restoDetail.restaurant.address,
-        rating: restoDetail.restaurant.rating,
-        menus: restoDetail.restaurant.menus,
-        customerReviews: restoDetail.restaurant.customerReviews,
-      },
-    })
+    detailRestoElement.detailResto = restoDetail.restaurant
+    detailRestoElement.labelButton = 'add to favorite'
+    // eslint-disable-next-line func-names
+    detailRestoElement.eventButtonFavorite = async function () {
+      await FavoriteRestoranIdb.putResto(this._detailResto)
+      detailRestoElement.labelButton = 'tersimpan'
+    }
   },
 
 }
