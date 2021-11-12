@@ -11,7 +11,7 @@ class Header extends HTMLElement {
         <img src="icons/logo.svg" alt="" class="logo">
         <button class="nav__btn">☰</button>
         <ul class="nav__list">
-          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="#/">Home</a></li>
           <li class="nav__item"><a href="#/favorite">Favorite</a></li>
           <li class="nav__item"><a href="https://github.com/irfan-fauzi" target="_blank" rel="noreferrer">About Us</a></li>
         </ul>
