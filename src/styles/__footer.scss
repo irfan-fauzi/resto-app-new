@@ -2,15 +2,77 @@ app-footer {
   display: block;
 }
 footer {
-  background: rgb(53, 51, 51);
-  height: 80px;
+  .flex {
+    display: flex;
+    // border: red solid 1px;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  background: rgb(199, 196, 196);
+  height: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  h4 {
-    font-family: "Caveat", cursive;
-    font-size: 2rem;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  .wrap {
+    // border: red solid 1px;
+    margin: 2rem 0;
+    a {
+      color: black;
+    }
+    p {
+      font-size: 0.9rem;
+      // border: red solid 1px;
+      max-width: 500px;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .social-media {
+    width: 30px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 868px) {
+  footer {
+    justify-content: space-between;
+    //border: red solid 1px;
+    .container {
+      display: flex;
+      // border: red solid 1px;
+      width: 1200px;
+      margin: auto;
+      justify-content: space-between;
+      .title {
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+      .wrap {
+        p {
+          text-align: left;
+          // /border: red solid 1px;
+          max-width: 350px;
+        }
+      }
+      .penutup {
+        //border: red solid 1px;
+        position: relative;
+        img {
+          //border: red solid 1px;
+          position: relative;
+          left: -100px;
+          top: 0;
+        }
+      }
+    }
   }
 }

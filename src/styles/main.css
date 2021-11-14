@@ -649,8 +649,8 @@ app-footer {
 }
 
 footer {
-  background: #353333;
-  height: 80px;
+  background: #c7c4c4;
+  height: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,12 +661,80 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-footer h4 {
-  font-family: "Caveat", cursive;
-  font-size: 2rem;
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer .wrap {
+  margin: 2rem 0;
+}
+
+footer .wrap a {
+  color: black;
+}
+
+footer .wrap p {
+  font-size: 0.9rem;
+  max-width: 500px;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+footer h3 {
+  font-size: 1.1rem;
+}
+
+footer .social-media {
+  width: 30px;
+}
+
+footer .logo {
+  width: 150px;
+}
+
+@media only screen and (min-width: 868px) {
+  footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container .title {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  footer .container .wrap p {
+    text-align: left;
+    max-width: 350px;
+  }
+  footer .container .penutup {
+    position: relative;
+  }
+  footer .container .penutup img {
+    position: relative;
+    left: -100px;
+    top: 0;
+  }
 }
 
 .skip-link {
