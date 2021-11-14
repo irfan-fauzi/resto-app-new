@@ -23,6 +23,11 @@ a {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+  color: red;
+}
+
 #mainContent {
   min-height: 100%;
 }
@@ -618,6 +623,17 @@ app-header header .nav__btn {
   .favorite-page .title-page {
     margin: 110px 0 20px 0;
   }
+}
+
+.not-found-page .title {
+  color: rgba(34, 33, 33, 0.582);
+  font-size: 1.2rem;
+}
+
+.not-found-page .img-ilustrasi {
+  max-width: 600px;
+  display: block;
+  margin: auto;
 }
 
 app-footer {

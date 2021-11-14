@@ -6,6 +6,7 @@ const FavoriteDetail = {
   async render() {
     return `
     <div class="detail-page">
+
     </div>
     `
   },
