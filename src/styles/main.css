@@ -32,9 +32,13 @@ a {
   min-height: 100%;
 }
 
+#mainContent .detail-page {
+  margin-top: 1rem;
+}
+
 @media only screen and (max-width: 868px) {
   #mainContent .detail-page {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 }
 
@@ -45,6 +49,8 @@ app-header {
 app-header header {
   background: #fffefe;
   width: 100%;
+  -webkit-box-shadow: 0.1px 1.8px 17.2px -8px rgba(0, 0, 0, 0.022), 0.3px 4.4px 43.4px -8px rgba(0, 0, 0, 0.031), 0.7px 9px 88.6px -8px rgba(0, 0, 0, 0.039), 1.5px 18.6px 182.5px -8px rgba(0, 0, 0, 0.048), 4px 51px 500px -8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0.1px 1.8px 17.2px -8px rgba(0, 0, 0, 0.022), 0.3px 4.4px 43.4px -8px rgba(0, 0, 0, 0.031), 0.7px 9px 88.6px -8px rgba(0, 0, 0, 0.039), 1.5px 18.6px 182.5px -8px rgba(0, 0, 0, 0.048), 4px 51px 500px -8px rgba(0, 0, 0, 0.07);
 }
 
 app-header header .logo {
@@ -317,8 +323,8 @@ app-header header .nav__btn {
 }
 
 .article__heading {
-  text-align: center;
-  margin-bottom: 5rem;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
 .article resto-list, .article resto-listfav {
@@ -606,12 +612,13 @@ app-header header .nav__btn {
 
 .favorite-page {
   font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
 
 .favorite-page .title-page {
-  margin: 2rem 0;
-  font-size: 1.5rem;
+  margin: 2rem auto;
   text-align: center;
+  font-size: 1.5rem;
   color: #474747;
 }
 
@@ -634,6 +641,7 @@ app-header header .nav__btn {
   max-width: 600px;
   display: block;
   margin: auto;
+  opacity: 0.6;
 }
 
 app-footer {

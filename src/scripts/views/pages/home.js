@@ -7,7 +7,7 @@ const Home = {
     <hero-app></hero-app>
     
     <section class="article" id="article">
-      <h2 class="article__heading">Pelayanan kami</h2>
+      <h2 class="article__heading">Restoran populer hari ini :</h2>
     </section>
     `
   },

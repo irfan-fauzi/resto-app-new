@@ -1,9 +1,10 @@
 .favorite-page {
   font-family: "Montserrat", sans-serif;
-  .title-page{
-    margin: 2rem 0;
-    font-size: 1.5rem;
+  margin: auto;
+  .title-page {
+    margin: 2rem auto;
     text-align: center;
+    font-size: 1.5rem;
     color: rgb(71, 71, 71);
   }
   .article {
@@ -13,7 +14,6 @@
   @media only screen and (max-width: 868px) {
     .title-page {
       margin: 110px 0 20px 0;
-      
     }
   }
 }

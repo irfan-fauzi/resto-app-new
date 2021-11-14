@@ -7,7 +7,7 @@ class NotFound extends HTMLElement {
     this.innerHTML = `
     <div class="not-found-page">
       <h1 class="title text-center">belum ada restourant favorite</h1>
-      <img src="images/empty-bro.svg" alt="data kosong" class="img-ilustrasi">
+      <img src="images/food-truck.svg" alt="data kosong" class="img-ilustrasi">
     </div>
     `
   }
