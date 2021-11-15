@@ -8,7 +8,8 @@
     text-align: left;
     margin-bottom: 2rem;
   }
-  resto-list, resto-listfav {
+  resto-list,
+  resto-listfav {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -93,6 +94,11 @@
     width: 100%;
     margin: 10rem 0;
     padding: 0;
+    &__heading {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
     resto-list {
       img {
         padding: 5px;

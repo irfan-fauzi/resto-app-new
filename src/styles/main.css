@@ -42,6 +42,54 @@ a {
   }
 }
 
+.loading-container {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddd;
+  border-top-color: orange;
+  border-radius: 50px;
+  -webkit-animation: loading 1s ease infinite;
+          animation: loading 1s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 app-header {
   display: block;
 }
@@ -327,7 +375,8 @@ app-header header .nav__btn {
   margin-bottom: 2rem;
 }
 
-.article resto-list, .article resto-listfav {
+.article resto-list,
+.article resto-listfav {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -429,6 +478,11 @@ app-header header .nav__btn {
     margin: 10rem 0;
     padding: 0;
   }
+  .article__heading {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
   .article resto-list img {
     padding: 5px;
   }
@@ -459,6 +513,18 @@ app-header header .nav__btn {
   color: #494444;
   max-width: 800px;
   margin: auto;
+}
+
+.detail .btn-favorite {
+  background: rgba(233, 63, 12, 0.644);
+  border: none;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .detail .main-img {
