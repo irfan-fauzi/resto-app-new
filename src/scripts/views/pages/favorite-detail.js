@@ -17,7 +17,7 @@ const FavoriteDetail = {
     const detailPageContainer = document.querySelector('.detail-page')
     const detailRestoElement = document.createElement('detail-resto')
     detailRestoElement.detailResto = restoDetailDB
-    detailRestoElement.labelButton = 'hapus dari favorite'
+    detailRestoElement.labelButton = '❌ hapus dari favorite'
     detailPageContainer.appendChild(detailRestoElement)
     // eslint-disable-next-line func-names
     detailRestoElement.eventButtonFavorite = async function () {

@@ -13,10 +13,12 @@ class Hero extends HTMLElement {
             <h2>Sarapan Lezat</h2>
             <h3>sarapan bergizi tinggi nutrisi bersama keluarga</h3>
             <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi fuga deleniti nemo commodi cum praesentium dolor eos, porro dolorem! Lorem ipsum dolor sit amet.</h4>
-            <button class="hero__btn">pesan sekarang</button>
+            <a href="#article">
+              <button class="hero__btn">pesan sekarang</button>
+            </a>
           </div>
           <div class="img-wrap" tabindex="0">
-            <img src="./images/heros/hero-image_2.jpg" alt="makanan dan minuman di atas meja">
+            <img loading="lazy" src="./images/heros/hero-image_2.jpg" alt="makanan dan minuman di atas meja">
           </div>
         </div>
       </section>

@@ -19,22 +19,21 @@ const RestoDetail = {
       const url = UrlParser.parseActiveUrlWithoutCombiner()
       const restoDetail = await RestoDBSource.detailResto(url.id)
       const detailPageContainer = document.querySelector('.detail-page')
-      const wait = document.querySelector('.wait')
+      const loading = document.querySelector('.loading-container')
       if (restoDetail) {
-        wait.remove()
+        loading.remove()
       }
       const detailRestoElement = document.createElement('detail-resto')
       detailPageContainer.appendChild(detailRestoElement)
       detailRestoElement.detailResto = restoDetail.restaurant
-      detailRestoElement.labelButton = 'add to favorite'
+      detailRestoElement.labelButton = '💾 simpan ke favorite'
       // eslint-disable-next-line func-names
       detailRestoElement.eventButtonFavorite = async function () {
         await FavoriteRestoranIdb.putResto(this._detailResto)
-        detailRestoElement.labelButton = 'tersimpan'
+        detailRestoElement.labelButton = 'tersimpan ✔'
       }
     } catch (error) {
-      const wait = document.querySelector('.wait')
-      wait.innerHTML = 'offline mode'
+      console.log(error)
     }
   },
 
