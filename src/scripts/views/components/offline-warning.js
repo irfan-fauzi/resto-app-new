@@ -7,7 +7,6 @@ class OfflineWarning extends HTMLElement {
     this.innerHTML = `
     <div class="offline-container">
       <h2>oops.. anda belum tersambung ke internet</h2>
-      <img src="images/food-truck.svg" alt="offline image">
     </div>
     `
   }
