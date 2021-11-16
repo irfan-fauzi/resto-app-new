@@ -2,6 +2,7 @@ import FavoriteRestoranIdb from '../../data/favorite-resto-idb'
 import RestoDBSource from '../../data/resto-db-source'
 import UrlParser from '../../routes/url-parser'
 import '../components/detail-resto'
+import '../components/offline-warning'
 
 const RestoDetail = {
   async render() {
@@ -33,7 +34,11 @@ const RestoDetail = {
         detailRestoElement.labelButton = 'tersimpan ✔'
       }
     } catch (error) {
-      console.log(error)
+      const detailPageContainer = document.querySelector('.detail-page')
+      const offlineWarning = document.createElement('offline-warning')
+      const loading = document.querySelector('.loading-container')
+      loading.remove()
+      detailPageContainer.appendChild(offlineWarning)
     }
   },
 

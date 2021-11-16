@@ -14,7 +14,7 @@ class Hero extends HTMLElement {
             <h3>sarapan bergizi tinggi nutrisi bersama keluarga</h3>
             <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi fuga deleniti nemo commodi cum praesentium dolor eos, porro dolorem! Lorem ipsum dolor sit amet.</h4>
             <a href="#article">
-              <button class="hero__btn">pesan sekarang</button>
+              <button class="hero__btn">cari restoran favorit</button>
             </a>
           </div>
           <div class="img-wrap" tabindex="0">
