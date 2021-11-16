@@ -804,6 +804,22 @@ footer .logo {
   }
 }
 
+offline-warning .offline-container h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 400px;
+  font-size: 1rem;
+  color: #534f4f;
+  margin: 4rem auto 2rem auto;
+}
+
+offline-warning .offline-container img {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;

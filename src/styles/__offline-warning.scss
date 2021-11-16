@@ -1,0 +1,18 @@
+offline-warning {
+  .offline-container {
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      width: 400px;
+      font-size: 1rem;
+      color: rgb(83, 79, 79);
+      margin: 4rem auto 2rem auto;
+    }
+    img {
+      max-width: 600px;
+      display: block;
+      margin: auto;
+      opacity: 0.6;
+    }
+  }
+}
