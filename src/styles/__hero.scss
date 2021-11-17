@@ -8,7 +8,7 @@
   position: relative;
   z-index: 6;
   background: url("https://raw.githubusercontent.com/irfan-fauzi/resto-app/main/src/public/images/heros/hero-image_4.jpg");
- 
+
   ::after {
     content: "";
     width: 100%;
@@ -54,16 +54,21 @@
         padding-right: 3rem;
       }
       .hero__btn {
-        background: rgb(27, 27, 27);
-        color: #fff;
         border: none;
-        padding: 1rem 2rem;
+
         font-weight: 600;
-        border-radius: 5px;
-        cursor: pointer;
+        padding: 1rem 0;
         transition: 0.2s ease-in-out;
         letter-spacing: 2px;
         text-transform: uppercase;
+        a {
+          color: #fff;
+          padding: 1rem 2rem;
+          background: rgb(27, 27, 27);
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 1.7rem;
+        }
         &:hover {
           background: rgb(255, 132, 0);
           transform: scale(1.1);
@@ -103,7 +108,6 @@
         .hero__btn {
           text-transform: lowercase;
           font-size: 0.8rem;
-          padding: 0.9rem 1.5rem;
         }
       }
     }
@@ -138,7 +142,6 @@
           letter-spacing: 1;
           text-transform: uppercase;
           font-size: 0.8rem;
-          padding: 0.9rem 1.5rem;
         }
       }
     }

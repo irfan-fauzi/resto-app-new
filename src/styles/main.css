@@ -274,17 +274,22 @@ app-header header .nav__btn {
 }
 
 .hero .hero__inner .text-wrap .hero__btn {
-  background: #1b1b1b;
-  color: #fff;
   border: none;
-  padding: 1rem 2rem;
   font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 1rem 0;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.hero .hero__inner .text-wrap .hero__btn a {
+  color: #fff;
+  padding: 1rem 2rem;
+  background: #1b1b1b;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.7rem;
 }
 
 .hero .hero__inner .text-wrap .hero__btn:hover {
@@ -323,7 +328,6 @@ app-header header .nav__btn {
   .hero .hero__inner .text-wrap .hero__btn {
     text-transform: lowercase;
     font-size: 0.8rem;
-    padding: 0.9rem 1.5rem;
   }
 }
 
@@ -359,7 +363,6 @@ app-header header .nav__btn {
     letter-spacing: 1;
     text-transform: uppercase;
     font-size: 0.8rem;
-    padding: 0.9rem 1.5rem;
   }
 }
 
@@ -822,12 +825,14 @@ offline-warning .offline-container img {
 
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: -70px;
   left: 0;
-  background-color: #bf1722;
+  background-color: #a0bf17;
   color: white;
-  padding: 8px;
-  z-index: 100;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  z-index: 999;
+  font-weight: bold;
 }
 
 .skip-link:focus {
