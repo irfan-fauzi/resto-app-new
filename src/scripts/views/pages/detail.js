@@ -1,6 +1,7 @@
 import FavoriteRestoranIdb from '../../data/favorite-resto-idb'
 import RestoDBSource from '../../data/resto-db-source'
 import UrlParser from '../../routes/url-parser'
+import FavoriteButtonPresenter from '../../utils/favoriteButtonPresenter'
 import '../components/detail-resto'
 import '../components/offline-warning'
 
@@ -26,13 +27,14 @@ const RestoDetail = {
       }
       const detailRestoElement = document.createElement('detail-resto')
       detailPageContainer.appendChild(detailRestoElement)
+      // ------------------------
+
       detailRestoElement.detailResto = restoDetail.restaurant
-      detailRestoElement.labelButton = '💾 simpan ke favorite'
-      // eslint-disable-next-line func-names
-      detailRestoElement.eventButtonFavorite = async function () {
-        await FavoriteRestoranIdb.putResto(this._detailResto)
-        detailRestoElement.labelButton = 'tersimpan ✔'
-      }
+      FavoriteButtonPresenter.init({
+        parentElement: detailRestoElement,
+        favoriteResto: FavoriteRestoranIdb,
+        restoDetail: restoDetail.restaurant,
+      })
     } catch (error) {
       const detailPageContainer = document.querySelector('.detail-page')
       const offlineWarning = document.createElement('offline-warning')
