@@ -27,6 +27,7 @@ const FavoriteButtonPresenter = {
     this._parentElement.eventButtonFavorite = async () => {
       await this._favoriteResto.putResto(this._restoDetail)
       this._parentElement.labelButton = '✔ Tersimpan'
+      this._renderButton()
     }
   },
 
@@ -36,6 +37,7 @@ const FavoriteButtonPresenter = {
     this._parentElement.eventButtonFavorite = async () => {
       await this._favoriteResto.deleteResto(this._restoDetail.id)
       this._parentElement.labelButton = '✔ Terhapus'
+      this._renderButton()
     }
   },
 

@@ -45,7 +45,7 @@ class DetailResto extends HTMLElement {
       </div>
       <div>
         <p class="peringkat"><img src="icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
-        <button class="btn-favorite" aria-label=${this._ariaLabel} >${this._label}</button>
+        <button class="btn-favorite" id="btn-fav" aria-label=${this._ariaLabel} >${this._label}</button>
         
       </div>
       <div class="categorie">
