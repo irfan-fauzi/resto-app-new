@@ -9,10 +9,10 @@ const FavoriteButtonPresenter = {
 
   async _renderButton() {
     const { id } = this._restoDetail
-    if (this._isRestoExist(id)) {
-      this._addResto()
-    } else {
+    if (await this._isRestoExist(id)) {
       this._removeResto()
+    } else {
+      this._addResto()
     }
   },
 
@@ -31,8 +31,9 @@ const FavoriteButtonPresenter = {
 
   async _removeResto() {
     this._parentElement.labelButton = '❌ hapus dari favorite'
-    this._parentElement.eventButtonFavorite = async function () {
-      console.log('hapus')
+    this._parentElement.eventButtonFavorite = async () => {
+      await this._favoriteResto.deleteResto(this._restoDetail.id)
+      this._parentElement.labelButton = '✔ Terhapus'
     }
   },
 
