@@ -23,6 +23,7 @@ const FavoriteButtonPresenter = {
 
   async _addResto() {
     this._parentElement.labelButton = '💾 simpan ke favorite'
+    this._parentElement.ariaLabel = 'save'
     this._parentElement.eventButtonFavorite = async () => {
       await this._favoriteResto.putResto(this._restoDetail)
       this._parentElement.labelButton = '✔ Tersimpan'
@@ -31,6 +32,7 @@ const FavoriteButtonPresenter = {
 
   async _removeResto() {
     this._parentElement.labelButton = '❌ hapus dari favorite'
+    this._parentElement.ariaLabel = 'remove'
     this._parentElement.eventButtonFavorite = async () => {
       await this._favoriteResto.deleteResto(this._restoDetail.id)
       this._parentElement.labelButton = '✔ Terhapus'
