@@ -12,6 +12,7 @@ const RestoDetail = {
       <div class="loading-container">
         <div class="loading"></div>
       </div>
+      <div id="buttonContainer"></div>
     </div>
     `
   },
@@ -22,16 +23,14 @@ const RestoDetail = {
       const restoDetail = await RestoDBSource.detailResto(url.id)
       const detailPageContainer = document.querySelector('.detail-page')
       const loading = document.querySelector('.loading-container')
-      if (restoDetail) {
+      if (restoDetail.error === false) {
         loading.remove()
       }
       const detailRestoElement = document.createElement('detail-resto')
       detailPageContainer.appendChild(detailRestoElement)
-      // ------------------------
-
       detailRestoElement.detailResto = restoDetail.restaurant
       FavoriteButtonPresenter.init({
-        parentElement: detailRestoElement,
+        parentElement: document.querySelector('#buttonContainer'),
         favoriteResto: FavoriteRestoranIdb,
         restoDetail: restoDetail.restaurant,
       })

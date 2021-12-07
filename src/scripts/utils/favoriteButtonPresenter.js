@@ -1,3 +1,5 @@
+import { createButtonAddFavorite, createButtonRemoveFavorite } from '../views/components/template/template-creator'
+
 /* eslint-disable func-names */
 const FavoriteButtonPresenter = {
   async init({ parentElement, favoriteResto: FavoriteResto, restoDetail }) {
@@ -22,23 +24,20 @@ const FavoriteButtonPresenter = {
   },
 
   async _addResto() {
-    this._parentElement.labelButton = '💾 simpan ke favorite'
-    this._parentElement.ariaLabel = 'save'
-    this._parentElement.eventButtonFavorite = async () => {
-      await this._favoriteResto.putResto(this._restoDetail)
-      this._parentElement.labelButton = '✔ Tersimpan'
-      this._renderButton()
-    }
+    // this._parentElement.innerHTML = createButtonAddFavorite()
+    // const btn = document.querySelector('.btn-favorite')
+    // btn.addEventListener('click', () => {
+    //   console.log('ok')
+    // })
+    console.log('ok')
   },
 
   async _removeResto() {
-    this._parentElement.labelButton = '❌ hapus dari favorite'
-    this._parentElement.ariaLabel = 'remove'
-    this._parentElement.eventButtonFavorite = async () => {
-      await this._favoriteResto.deleteResto(this._restoDetail.id)
-      this._parentElement.labelButton = '✔ Terhapus'
-      this._renderButton()
-    }
+    this._parentElement.innerHTML = createButtonRemoveFavorite()
+    const btn = document.querySelector('.btn-favorite')
+    btn.addEventListener('click', () => {
+      console.log('ok2')
+    })
   },
 
 }

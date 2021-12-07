@@ -19,11 +19,6 @@ const FavoriteDetail = {
     const detailRestoElement = document.createElement('detail-resto')
     detailRestoElement.detailResto = restoDetailDB
     detailPageContainer.appendChild(detailRestoElement)
-    FavoriteButtonPresenter.init({
-      parentElement: detailRestoElement,
-      favoriteResto: FavoriteRestoranIdb,
-      restoDetail: restoDetailDB,
-    })
   },
 
 }

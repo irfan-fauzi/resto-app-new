@@ -9,20 +9,6 @@ class DetailResto extends HTMLElement {
     this.render()
   }
 
-  set eventButtonFavorite(event) {
-    this._eventButtonFavorite = event
-  }
-
-  set labelButton(label) {
-    this._label = label
-    this.render()
-  }
-
-  set ariaLabel(val) {
-    this._ariaLabel = val
-    this.render()
-  }
-
   render() {
     const {
       pictureId,
@@ -45,8 +31,6 @@ class DetailResto extends HTMLElement {
       </div>
       <div>
         <p class="peringkat"><img src="icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
-        <button class="btn-favorite" id="btn-fav" aria-label=${this._ariaLabel} >${this._label}</button>
-        
       </div>
       <div class="categorie">
         
@@ -93,9 +77,6 @@ class DetailResto extends HTMLElement {
     const foodWrap = this.querySelector('#foods')
     const drinkWrap = this.querySelector('#drinks')
     const ulasanWrap = this.querySelector('#ulasan-wrap')
-    const btnFavorite = this.querySelector('.btn-favorite')
-
-    btnFavorite.addEventListener('click', () => this._eventButtonFavorite())
 
     menus.foods.forEach((food) => {
       const foodComponent = document.createElement('food-menu')
