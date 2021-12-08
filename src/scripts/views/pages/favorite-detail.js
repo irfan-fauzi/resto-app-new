@@ -7,8 +7,9 @@ const FavoriteDetail = {
   async render() {
     return `
     <div class="detail-page">
-
+      
     </div>
+    <div id="buttonContainer"></div>
     `
   },
 
@@ -19,6 +20,11 @@ const FavoriteDetail = {
     const detailRestoElement = document.createElement('detail-resto')
     detailRestoElement.detailResto = restoDetailDB
     detailPageContainer.appendChild(detailRestoElement)
+    FavoriteButtonPresenter.init({
+      parentElement: document.querySelector('#buttonContainer'),
+      favoriteResto: FavoriteRestoranIdb,
+      restoDetail: restoDetailDB,
+    })
   },
 
 }

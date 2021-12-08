@@ -1,7 +1,7 @@
-const createButtonAddFavorite = () => `
-  <button class="btn-favorite save">simpan ke favorite</button>
+const createButtonAddFavorite = (icon) => `
+  <button class="btn-favorite save" aria-label="add this resto">${icon}</button>
 `
-const createButtonRemoveFavorite = () => `
-  <button class="btn-favorite remove">hapus dari favorite</button>
+const createButtonRemoveFavorite = (icon) => `
+  <button class="btn-favorite remove" aria-label="remove this resto">${icon}</button>
 `
 export { createButtonAddFavorite, createButtonRemoveFavorite }

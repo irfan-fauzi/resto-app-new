@@ -834,6 +834,16 @@ offline-warning .offline-container img {
   opacity: 0.6;
 }
 
+.btn-favorite {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .skip-link {
   position: absolute;
   top: -70px;

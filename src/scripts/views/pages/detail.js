@@ -12,8 +12,8 @@ const RestoDetail = {
       <div class="loading-container">
         <div class="loading"></div>
       </div>
-      <div id="buttonContainer"></div>
     </div>
+    <div id="buttonContainer"></div>
     `
   },
 
