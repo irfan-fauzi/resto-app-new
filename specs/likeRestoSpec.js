@@ -6,6 +6,7 @@ describe('Favoritkan Resto :', () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="buttonContainer"></div>'
   })
+
   const btnPresenterInit = async (resto) => {
     await FavoriteButtonPresenter.init({
       parentElement: document.querySelector('#buttonContainer'),
@@ -33,5 +34,21 @@ describe('Favoritkan Resto :', () => {
     const resto = await FavoriteRestoranIdb.getResto(1)
     expect(resto).toEqual({ id: 1 })
     FavoriteRestoranIdb.deleteResto(1)
+  })
+
+  // test 4 --- skenario negatif
+  it('should not add resto again when its already added', async () => {
+    await btnPresenterInit({ id: 1 })
+    await FavoriteRestoranIdb.putResto({ id: 1 })
+    document.querySelector('.btn-favorite').dispatchEvent(new Event('click'))
+    expect(await FavoriteRestoranIdb.getAllResto()).toEqual([{ id: 1 }])
+    FavoriteRestoranIdb.deleteResto(1)
+  })
+
+  // test 5
+  xit('should not add resto when it has no id', async () => {
+    await btnPresenterInit({})
+    document.querySelector('.btn-favorite').dispatchEvent(new Event('click'))
+    expect(await FavoriteRestoranIdb.getAllResto()).toEqual([])
   })
 })
