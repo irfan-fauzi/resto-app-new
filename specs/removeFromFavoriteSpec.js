@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import FavoriteRestoranIdb from '../src/scripts/data/favorite-resto-idb'
-import FavoriteButtonPresenter from '../src/scripts/utils/favoriteButtonPresenter'
+import { btnPresenterInit } from './helpers/testFactories'
 
 describe('Hapus data dari favorite', () => {
   beforeEach(async () => {
@@ -10,13 +10,7 @@ describe('Hapus data dari favorite', () => {
   afterEach(async () => {
     await FavoriteRestoranIdb.deleteResto(1)
   })
-  const btnPresenterInit = async (resto) => {
-    await FavoriteButtonPresenter.init({
-      parentElement: document.querySelector('#buttonContainer'),
-      restoDetail: resto,
-      favoriteResto: FavoriteRestoranIdb,
-    })
-  }
+
   // test 1
   it('harusnya muncul tombol "hapus" ketika resto sudah difavoritkan', async () => {
     await btnPresenterInit({ id: 1 })

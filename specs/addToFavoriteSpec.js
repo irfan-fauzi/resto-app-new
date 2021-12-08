@@ -1,19 +1,11 @@
 /* eslint-disable no-undef */
 import FavoriteRestoranIdb from '../src/scripts/data/favorite-resto-idb'
-import FavoriteButtonPresenter from '../src/scripts/utils/favoriteButtonPresenter'
+import { btnPresenterInit } from './helpers/testFactories'
 
 describe('Favoritkan Resto :', () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="buttonContainer"></div>'
   })
-
-  const btnPresenterInit = async (resto) => {
-    await FavoriteButtonPresenter.init({
-      parentElement: document.querySelector('#buttonContainer'),
-      restoDetail: resto,
-      favoriteResto: FavoriteRestoranIdb,
-    })
-  }
   // test 1
   it('harusnya muncul tombol simpan, ketika resto belum pernah difavoritkan', async () => {
     await btnPresenterInit({ id: 1 })
@@ -46,7 +38,7 @@ describe('Favoritkan Resto :', () => {
   })
 
   // test 5
-  fit('should not add resto when it has no id', async () => {
+  it('should not add resto when it has no id', async () => {
     await btnPresenterInit({})
     document.querySelector('.btn-favorite').dispatchEvent(new Event('click'))
     expect(await FavoriteRestoranIdb.getAllResto()).toEqual([])
