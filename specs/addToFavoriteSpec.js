@@ -46,7 +46,7 @@ describe('Favoritkan Resto :', () => {
   })
 
   // test 5
-  xit('should not add resto when it has no id', async () => {
+  fit('should not add resto when it has no id', async () => {
     await btnPresenterInit({})
     document.querySelector('.btn-favorite').dispatchEvent(new Event('click'))
     expect(await FavoriteRestoranIdb.getAllResto()).toEqual([])
