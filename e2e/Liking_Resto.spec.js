@@ -51,5 +51,6 @@ Scenario('liking 3 resto', async ({ I }) => {
     // kembali ke home
     I.amOnPage('/')
   }
-  console.log(titles)
+  I.amOnPage('/#/favorite')
+  I.seeElement('.article__item')
 })
