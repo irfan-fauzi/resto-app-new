@@ -20,7 +20,7 @@ class RestoItem extends HTMLElement {
         
         <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" loading=lazy>
         <div class="content">
-          <h2 class="title"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
+          <h2 class="title" id="title-resto"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
           <div class="flex">
             <h3 class="city">${city}</h3>
             <h4 class="rating">⭐️ ${rating}</h4>
