@@ -24,7 +24,7 @@ const Favorite = {
     const restoList = document.createElement('resto-list')
     articleContainer.appendChild(restoList)
     restoList.dataResto = resto
-    restoList.setDetailPage = 'favorite-detail'
+    restoList.setDetailPage = 'detail'
   },
 
 }
