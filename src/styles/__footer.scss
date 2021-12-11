@@ -43,10 +43,12 @@ footer {
     width: 30px;
     height: 30px;
   }
+ 
 
   .logo {
     width: 150px;
-    height: auto;
+    height: max-content;
+   
   }
 }
 @media only screen and (min-width: 868px) {
