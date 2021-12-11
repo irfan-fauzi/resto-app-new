@@ -6,7 +6,7 @@ const CONFIG = {
   CACHE_NAME: new Date().toISOString(),
   DATABASE_NAME: 'kemang-resto-database',
   DATABASE_VERSION: 1,
-  OBJECT_STORE_NAME: 'movies',
+  OBJECT_STORE_NAME: 'resto',
 }
 
 export default CONFIG
