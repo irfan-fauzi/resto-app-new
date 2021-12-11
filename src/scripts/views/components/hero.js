@@ -18,7 +18,7 @@ class Hero extends HTMLElement {
       
           </div>
           <div class="img-wrap" tabindex="0">
-            <img loading="lazy" src="./images/heros/hero-image_2.jpg" alt="makanan dan minuman di atas meja">
+            <img src="./images/heros/hero-image_2.jpg" alt="makanan dan minuman di atas meja">
           </div>
         </div>
       </section>
