@@ -44,8 +44,8 @@ class Footer extends HTMLElement {
         </div>
         <div class="wrap penutup">
           <picture>
-          <source srcset="images/icons/logo-3.png" type="image/png">
-          <img src="images/icons/logo-3.png" alt="logo" class="logo">
+          <source srcset="images/icons/logo-1.png" type="image/png">
+          <img src="images/icons/logo-1.png" alt="logo" class="logo">
           </picture>
           <p>Kemangi adalah sebuah website untuk mendapatkan informasi restoran-restoran kekinian dan terlengkap.</p>
           <p>Copyright © 2021 - Kemangi</p>
