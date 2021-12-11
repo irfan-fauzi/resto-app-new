@@ -44,6 +44,7 @@ class Footer extends HTMLElement {
         </div>
         <div class="wrap penutup">
           <picture>
+          <source srcset="images/icons/logo-1.webp" type="image/webp">
           <source srcset="images/icons/logo-1.png" type="image/png">
           <img src="images/icons/logo-1.png" alt="logo" class="logo">
           </picture>
