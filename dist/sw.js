@@ -8,13 +8,13 @@ var serviceWorkerOption = {
     "/icons/icon-384x384.png",
     "/icons/icon-512x512.png",
     "/images/food-truck.png",
+    "/images/heros/hero-image_2.jpg",
     "/images/icons/facebook.png",
     "/images/icons/instagram.png",
     "/images/icons/location.png",
     "/images/icons/logo-1.png",
     "/images/icons/star.png",
     "/images/icons/twitter.png",
-    "/images/heros/hero-image_2.jpg",
     "/index.html"
   ]
 };

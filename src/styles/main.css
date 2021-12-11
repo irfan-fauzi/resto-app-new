@@ -303,6 +303,13 @@ app-header header .nav__btn {
   width: 100%;
 }
 
+.hero .hero__inner .img-wrap img {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 @media only screen and (max-width: 868px) {
   hero-app {
     position: relative;
