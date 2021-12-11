@@ -54,12 +54,13 @@ module.exports = {
     new ImageminWebpWebpackPlugin({
       config: [
         {
-          test: /\.(jp?eg|png)/,
+          test: /\.(jpg|png|svg)/,
           options: {
-            quality: 50,
+            quality: 30,
           },
         },
       ],
+      overrideExtension: true,
     }),
   ],
 }

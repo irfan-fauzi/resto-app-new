@@ -20,18 +20,34 @@ class Footer extends HTMLElement {
           <h3 class="title">contact us</h3>
           <div class="flex">
             <a href="#">
-              <img class="social-media" src="images/icons/facebook.png" alt="facebook">
+              <picture>
+                <source srcset="images/icons/facebook.webp" type="image/webp">
+                <source srcset="images/icons/facebook.png" type="image/png">
+                <img class="social-media" src="images/icons/facebook.png" alt="facebook">
+              </picture>
             </a>
             <a href="#">
+            <picture>
+              <source srcset="images/icons/twitter.webp" type="image/webp">
+              <source srcset="images/icons/twitter.png" type="image/png">
               <img class="social-media" src="images/icons/twitter.png" alt="twitter">
+             </picture> 
             </a>
             <a href="#">
+              <picture>
+              <source srcset="images/icons/instagram.webp" type="image/webp">
+              <source srcset="images/icons/instagram.png" type="image/png">
               <img class="social-media" src="images/icons/instagram.png" alt="instagram">
+              </picture>
             </a>
           </div>
         </div>
         <div class="wrap penutup">
+          <picture>
+          <source srcset="images/icons/logo-3.webp" type="image/webp">
+          <source srcset="images/icons/logo-3.svg" type="image/jpeg">
           <img src="images/icons/logo-3.svg" alt="logo" class="logo">
+          </picture>
           <p>Kemangi adalah sebuah website untuk mendapatkan informasi restoran-restoran kekinian dan terlengkap.</p>
           <p>Copyright © 2021 - Kemangi</p>
         </div>
