@@ -9,7 +9,7 @@ class Header extends HTMLElement {
     <header>
       <nav id="drawer" class="nav">
         <a href="/">
-          <img src="icons/logo-3.svg" alt="" class="logo">
+          <img src="images/icons/logo-3.svg" alt="" class="logo">
         </a>
         <button class="nav__btn">☰</button>
         <ul class="nav__list">

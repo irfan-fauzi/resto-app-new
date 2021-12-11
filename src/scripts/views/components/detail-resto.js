@@ -30,10 +30,10 @@ class DetailResto extends HTMLElement {
       </div>
       <div class="title-wrap">
         <h2>${name}</h2>  
-        <p><img class="icon-location" src="icons/location.png" alt="">Alamat: ${address} - ${city}</p>  
+        <p><img class="icon-location" src="images/icons/location.png" alt="">Alamat: ${address} - ${city}</p>  
       </div>
       <div>
-        <p class="peringkat"><img src="icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
+        <p class="peringkat"><img src="images/icons/star.png" class="icon-star" alt="">rating: ${rating}</p>
       </div>
       <div class="categorie">
         
