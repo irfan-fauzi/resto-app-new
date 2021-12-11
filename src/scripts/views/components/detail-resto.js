@@ -23,7 +23,10 @@ class DetailResto extends HTMLElement {
     this.innerHTML = `
     <article class="detail">
       <div class="img-wrap">
-        <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="" class="main-img">
+        <picture>
+          <source media="(max-width: 600px)" srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/jpeg">
+          <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="" class="main-img">
+        </picture>
       </div>
       <div class="title-wrap">
         <h2>${name}</h2>  
