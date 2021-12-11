@@ -303,6 +303,11 @@ app-header header .nav__btn {
   width: 100%;
 }
 
+.hero .hero__inner .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 868px) {
   hero-app {
     position: relative;
@@ -430,6 +435,7 @@ app-header header .nav__btn {
 
 .article__item .city {
   font-size: 0.9rem;
+  color: #0000;
 }
 
 .article__item .desc {
@@ -458,7 +464,7 @@ app-header header .nav__btn {
 }
 
 .article .flex .rating {
-  color: #e87109;
+  color: #924807;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -783,7 +789,7 @@ footer .social-media {
 
 footer .logo {
   width: 150px;
-  height: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 868px) {
