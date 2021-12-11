@@ -11,8 +11,8 @@ class Header extends HTMLElement {
         <a href="/">
         <picture>
           <source srcset="images/icons/logo-3.webp" type="image/webp">
-          <source srcset="images/icons/logo-3.svg" type="image/jpeg">
-          <img src="images/icons/logo-3.svg" alt="" class="logo">
+          <source srcset="images/icons/logo-3.png" type="image/png">
+          <img src="images/icons/logo-3.png" alt="logo restoran" class="logo">
         </picture>  
         </a>
         <button class="nav__btn">☰</button>
