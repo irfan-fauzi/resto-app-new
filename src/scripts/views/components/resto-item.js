@@ -18,7 +18,7 @@ class RestoItem extends HTMLElement {
     this.innerHTML = `
       <article class="article__item" tabindex="0">
         <picture>
-          <source media="(max-width: 600px)" srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/webp">
+          <source media="(max-width: 600px)" srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/jpeg">
           
           <img src=${CONFIG.SMALL_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" loading=lazy></img>
     
