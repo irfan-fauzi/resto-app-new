@@ -19,21 +19,21 @@ class Footer extends HTMLElement {
         <div class="wrap kontak">
           <h3 class="title">contact us</h3>
           <div class="flex">
-            <a href="#">
+            <a href="https://web.facebook.com/ahmad.i.sadega/" target="_blank" rel="noreferrer">
               <picture>
                 <source srcset="images/icons/facebook.webp" type="image/webp">
                 <source srcset="images/icons/facebook.png" type="image/png">
                 <img class="social-media" src="images/icons/facebook.png" alt="facebook">
               </picture>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
             <picture>
               <source srcset="images/icons/twitter.webp" type="image/webp">
               <source srcset="images/icons/twitter.png" type="image/png">
               <img class="social-media" src="images/icons/twitter.png" alt="twitter">
              </picture> 
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <picture>
               <source srcset="images/icons/instagram.webp" type="image/webp">
               <source srcset="images/icons/instagram.png" type="image/png">
@@ -44,9 +44,8 @@ class Footer extends HTMLElement {
         </div>
         <div class="wrap penutup">
           <picture>
-          <source srcset="images/icons/logo-3.webp" type="image/webp">
-          <source srcset="images/icons/logo-3.svg" type="image/jpeg">
-          <img src="images/icons/logo-3.svg" alt="logo" class="logo">
+          <source srcset="images/icons/logo-3.png" type="image/png">
+          <img src="images/icons/logo-3.png" alt="logo" class="logo">
           </picture>
           <p>Kemangi adalah sebuah website untuk mendapatkan informasi restoran-restoran kekinian dan terlengkap.</p>
           <p>Copyright © 2021 - Kemangi</p>

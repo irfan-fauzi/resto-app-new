@@ -10,7 +10,6 @@ class Header extends HTMLElement {
       <nav id="drawer" class="nav">
         <a href="/">
         <picture>
-          <source srcset="images/icons/logo-3.webp" type="image/webp">
           <source srcset="images/icons/logo-3.png" type="image/png">
           <img src="images/icons/logo-3.png" alt="logo restoran" class="logo">
         </picture>  
