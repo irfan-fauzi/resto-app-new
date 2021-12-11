@@ -3,6 +3,8 @@ var serviceWorkerOption = {
     "/bundle.js",
     "/favicon.png",
     "/manifest.json",
+    "/images/empty-bro.svg",
+    "/images/food-truck.svg",
     "/icons/drink.png",
     "/icons/facebook.png",
     "/icons/food.png",
@@ -17,10 +19,7 @@ var serviceWorkerOption = {
     "/icons/logo.svg",
     "/icons/star.png",
     "/icons/twitter.png",
-    "/images/empty-bro.svg",
-    "/images/food-truck.svg",
     "/images/heros/hero-image_2.jpg",
-    "/images/heros/hero-image_4.jpg",
     "/index.html"
   ]
 };
