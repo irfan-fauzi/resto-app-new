@@ -18,7 +18,7 @@ class RestoItem extends HTMLElement {
     this.innerHTML = `
       <article class="article__item" tabindex="0">
         
-        <img src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" loading=lazy>
+        <img src=${CONFIG.SMALL_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" loading=lazy>
         <div class="content">
           <h2 class="title" id="title-resto"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
           <div class="flex">
