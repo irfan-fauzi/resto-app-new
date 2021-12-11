@@ -19,7 +19,6 @@ class Hero extends HTMLElement {
           </div>
           <div class="img-wrap" tabindex="0">
             <picture>
-            <source srcset="./images/heros/hero-image_2.webp" type="image/webp">
             <source srcset="./images/heros/hero-image_2.jpg" type="image/jpeg">
             <img src="./images/heros/hero-image_2.jpg" alt="makanan dan minuman di atas meja">
             </picture>
