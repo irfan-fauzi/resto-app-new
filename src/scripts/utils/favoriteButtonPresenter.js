@@ -24,7 +24,7 @@ const FavoriteButtonPresenter = {
   },
 
   async _addResto() {
-    this._parentElement.innerHTML = createButtonAddFavorite('💾')
+    this._parentElement.innerHTML = createButtonAddFavorite('👍')
     const btn = document.querySelector('.btn-favorite')
     btn.addEventListener('click', async () => {
       await this._favoriteResto.putResto(this._restoDetail)

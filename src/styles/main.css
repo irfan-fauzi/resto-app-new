@@ -848,12 +848,39 @@ offline-warning .offline-container img {
 
 .btn-favorite {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  bottom: 18px;
+  right: 18px;
   width: 66px;
   height: 66px;
   border-radius: 50px;
   cursor: pointer;
+  border: whitesmoke solid 2px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);
+}
+
+.save {
+  background: #78cbd6;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.save:hover {
+  background: #359bdf;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.remove {
+  background: #ecabc4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.remove:hover {
+  background: #f08ab1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .skip-link {
