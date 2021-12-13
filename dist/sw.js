@@ -18,7 +18,6 @@ var serviceWorkerOption = {
     "/images/icons/instagram.png",
     "/images/icons/location.png",
     "/images/icons/logo-1.png",
-    "/images/icons/logo-1.webp",
     "/images/icons/star.png",
     "/images/icons/twitter.png",
     "/index.html"

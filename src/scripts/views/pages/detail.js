@@ -8,7 +8,7 @@ import '../components/offline-warning'
 const RestoDetail = {
   async render() {
     return `
-    <div class="detail-page">
+    <div class="detail-page" id="article" tabindex="0">
       <div class="loading-container">
         <div class="loading"></div>
       </div>

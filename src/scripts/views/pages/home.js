@@ -6,7 +6,7 @@ const Home = {
     return `
     <hero-app></hero-app>
     
-    <section class="article" id="article">
+    <section class="article" id="article" tabindex="0">
       <h2 class="article__heading" id="article__heading">Restoran populer hari ini :</h2>
     </section>
     `

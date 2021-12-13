@@ -7,7 +7,7 @@ const Favorite = {
     return `
     <div class="favorite-page">
       <h1 class="title-page">Favorite Restourant</h1>
-      <section class="article" id="article">
+      <section class="article" id="article" tabindex="0">
 
       </section>
     </div>

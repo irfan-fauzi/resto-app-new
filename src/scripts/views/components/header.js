@@ -11,7 +11,7 @@ class Header extends HTMLElement {
         <a href="/">
         <picture>
           <source srcset="images/icons/logo-1.webp" type="image/webp">
-          <source srcset="images/icons/logo-1.png" type="image/png">
+          <source srcset="images/icons/logo-1.png" type="image/jpeg">
           <img src="images/icons/logo-1.png" alt="logo restoran" class="logo">
         </picture>  
         </a>
