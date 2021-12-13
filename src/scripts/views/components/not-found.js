@@ -8,8 +8,9 @@ class NotFound extends HTMLElement {
     <div class="not-found-page">
       <h1 id="not-found-text" class="title text-center">belum ada restourant favorite</h1>
       <picture>
-      <source srcset="images/food-truck.webp" type="image/webp">
-      <source srcset="images/food-truck.png" type="image/png">
+      <source media="(max-width: 600px)" srcset="images/food-truck.webp" type="image/webp">
+      <source media="(max-width: 600px)" srcset="images/food-truck.png" type="image/png">
+      
       <img src="images/food-truck.png" alt="data kosong" class="img-ilustrasi">
       </picture>
     </div>
