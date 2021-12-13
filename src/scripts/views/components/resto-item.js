@@ -1,4 +1,6 @@
 import CONFIG from '../../globals/config'
+import 'lazysizes'
+import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 
 class RestoItem extends HTMLElement {
   set dataResto(data) {
@@ -18,8 +20,8 @@ class RestoItem extends HTMLElement {
     this.innerHTML = `
       <article class="article__item" tabindex="0">
         <picture>
-          <source media="(max-width: 600px)" srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/jpeg">
-          <img src=${CONFIG.SMALL_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" loading=lazy></img>
+          <source media="(max-width: 600px)" data-srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/jpeg">
+          <img data-src=${CONFIG.SMALL_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" class="lazyload"></img>
         </picture>
         <div class="content">
           <h2 class="title" id="title-resto"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
