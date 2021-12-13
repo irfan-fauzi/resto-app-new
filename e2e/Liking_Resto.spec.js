@@ -10,7 +10,6 @@ Before(({ I }) => {
 })
 
 Scenario('showing empty message', ({ I }) => {
-  I.seeElement('not-found')
   I.see('belum ada restourant favorite', '#not-found-text')
 })
 
@@ -33,7 +32,6 @@ Scenario('liking one resto', async ({ I }) => {
 })
 
 Scenario('liking two resto and make sure that resto show right', async ({ I }) => {
-  I.see('belum ada restourant favorite', '#not-found-text')
   I.amOnPage('/')
 
   I.seeElement('#title-resto a')
