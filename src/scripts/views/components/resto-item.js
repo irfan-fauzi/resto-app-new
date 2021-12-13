@@ -21,7 +21,7 @@ class RestoItem extends HTMLElement {
       <article class="article__item" tabindex="0">
         <picture>
           <source media="(max-width: 600px)" data-srcset=${CONFIG.SMALL_IMAGE_URL + pictureId} type="image/jpeg">
-          <img data-src=${CONFIG.SMALL_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" class="lazyload"></img>
+          <img data-src=${CONFIG.BASE_IMAGE_URL + pictureId} alt="meja makan dalam ruangan dengan tirai yang besar" class="lazyload"></img>
         </picture>
         <div class="content">
           <h2 class="title" id="title-resto"><a href="#/${this._detailPage}/${id}">${name}</a></h2>
